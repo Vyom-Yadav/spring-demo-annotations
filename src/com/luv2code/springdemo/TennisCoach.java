@@ -15,7 +15,7 @@ import javax.annotation.PreDestroy;
 //@Scope("prototype")
 public class TennisCoach implements Coach {
 
-    //@Autowired // Field Injection, uses Java Reflection Technology.
+    //@Autowired // Field Injection, not good, uses Java Reflection Technology.
     //@Qualifier("randomFortuneService") // Can be used to specify the
                                       // implementation to be used,
                                       // can be used with all type of injections.
@@ -50,7 +50,7 @@ public class TennisCoach implements Coach {
     }
 
     /*@Autowired
-    public void setFortuneService(FortuneService fortuneService) {
+    public void setFortuneService(@Qualifier("randomFortuneService") FortuneService fortuneService) {
         System.out.println(">> Tennis Coach: inside setFortuneService() method");
         this.fortuneService = fortuneService;
     }*/

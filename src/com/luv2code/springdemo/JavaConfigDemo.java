@@ -10,7 +10,7 @@ public class JavaConfigDemo {
                 new AnnotationConfigApplicationContext(SportConfig.class);
 
         // get the bean form the container
-        TennisCoach theCoach = context.getBean("tennisCoach", TennisCoach.class);
+        SwimCoach theCoach = context.getBean("swimCoach", SwimCoach.class);
 
         // call a method on the bean
         System.out.println(theCoach.getDailyWorkout());
