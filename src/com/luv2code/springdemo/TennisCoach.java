@@ -15,6 +15,7 @@ import javax.annotation.PreDestroy;
 //@Scope("prototype")
 public class TennisCoach implements Coach {
 
+    // Autowired injects dependency at the time of runtime implicitly.
     //@Autowired // Field Injection, not good, uses Java Reflection Technology.
     //@Qualifier("randomFortuneService") // Can be used to specify the
                                       // implementation to be used,
